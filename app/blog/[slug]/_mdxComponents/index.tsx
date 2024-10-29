@@ -17,14 +17,9 @@ export const mdxComponents: MDXComponents = {
   // @ts-expect-error
   pre: MdxCodeBlock,
 
-  // @ts-expect-error
   Callout: MdxCallout,
-  // @ts-expect-error
   Image: MdxImage,
-  // @ts-expect-error
   LearningPath: MdxLearningPath,
-  // @ts-expect-error
   TargetAudience: MdxTargetAudience,
-  // @ts-expect-error
   TwitterHandle: MdxTwitterHandle,
 };

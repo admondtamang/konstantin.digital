@@ -5,7 +5,7 @@ import { Transition } from '@headlessui/react';
 import Image from 'next/image';
 import clsx from 'clsx';
 
-import Avatar from './konstantin-muenster-avatar.jpg';
+import Avatar from './avatar.jpg';
 
 type AvatarBubbleProps = {
   className?: string;

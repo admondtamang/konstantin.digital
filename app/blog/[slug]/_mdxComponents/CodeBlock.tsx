@@ -18,7 +18,7 @@ export const MdxCodeBlock: FC<MdxCodeBlockProps> = ({
   return (
     <Code
       className="not-prose !my-12 text-sm"
-      lang={lang.replace('language-', '')}
+      lang={lang && lang?.replace('language-', '')}
       title={title}
       extensions={[focus]}
     >

@@ -1,0 +1,92 @@
+---
+title: Build your own package in Go
+summary: 'Building your own package in Go'
+publishedAt: '2020/11/07'
+category: 'Engineering'
+tags: ['Backend', 'Go lang', 'Best Practices', 'server']
+cover:
+  src: '/images/posts/how-to-build-a-text-editor-like-notion/notion-clone-cover.png'
+  alt: 'Notion Clone React'
+  caption: 'Slash commands are a building block in Notions text editor.'
+---
+
+---
+
+## Local Development of Go Packages: Fork, Modify, and Replace
+
+To locally develop a Go package, follow these steps:
+
+### 1. Fork and Clone the Repository
+
+Fork the repository you want to modify and clone it to your preferred directory. You can clone the repository to any directory, but for Go development, it's common to use the Go workspace.
+
+To set up the workspace, navigate to your home directory and create the following folder structure:
+
+```bash
+cd ~
+mkdir -p go/src/github.com/_admondtamang
+cd go/src/github.com/_admondtamang
+git clone https://github.com/admondtamang/[package_name]
+```
+
+### 2. Modify the `go.mod` File
+
+For local development, you don’t need to use a tag. Generate the replace directive in your `go.mod` file using the following command:
+
+```bash
+go mod edit -replace="github.com/mmcdole/gofeed@v1.2.1=/Users/admondtamang/go/src/github.com/_admondtamang/gofeed"
+```
+
+Alternatively, you can manually edit the `go.mod` file to include the replace directive. The final `go.mod` should look like this:
+
+```go
+module oneaccord.cc/test
+
+go 1.23.0
+
+require github.com/mmcdole/gofeed v1.2.1
+
+require (
+  github.com/PuerkitoBio/goquery v1.8.0 // indirect
+  github.com/andybalholm/cascadia v1.3.1 // indirect
+  github.com/json-iterator/go v1.1.12 // indirect
+  github.com/mmcdole/goxpp v1.1.1-0.20240225020742-a0c311522b23 // indirect
+  github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
+  github.com/modern-go/reflect2 v1.0.2 // indirect
+  golang.org/x/net v0.4.0 // indirect
+  golang.org/x/text v0.5.0 // indirect
+)
+
+replace github.com/mmcdole/gofeed v1.2.1 => /Users/admondtamang/go/src/github.com/_admondtamang/gofeed
+```
+
+That's all for locally development you can modify your changes and it will reflect in your codebase. To get most out of it push changes to Github repo.
+
+## Publish it to Github
+
+### 3. Push Changes to GitHub with a Tag
+
+Once you've made your changes, push them to your forked repository. Create and push a tag:
+
+```bash
+git tag "v0.0.1"
+git push --tags
+```
+
+### 4. Update the `go.mod` File to Use Your Fork
+
+Replace the dependency in your `go.mod` file with the new version from your fork:
+
+```bash
+go mod edit -replace="github.com/mmcdole/gofeed@v1.2.1=github.com/admondtamang/gofeed@v0.0.1"
+```
+
+### 5. Run `go mod tidy`
+
+Finally, run:
+
+```bash
+go mod tidy
+```
+
+This will clean up your `go.mod` file and ensure all dependencies are properly managed.

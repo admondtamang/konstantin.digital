@@ -1,0 +1,53 @@
+---
+title: Git beginner mistakes   how to correct them.
+summary: 'Build your own Notion clone with React.js and learn how such text editors work.'
+publishedAt: '2020/11/07'
+category: 'Engineering'
+tags: ['Frontend', 'Best Practices', 'React.js']
+---
+
+---
+
+Title: Cleaning up Git Repositories with BFG Repo-Cleaner
+
+Introduction:
+In the world of software development, Git has become the go-to version control system for managing projects. However, as projects evolve and grow, so do their Git repositories. Over time, these repositories can become cluttered with large files, unnecessary commits, and other artifacts that can slow down operations and make collaboration cumbersome. In this blog post, we'll explore how to clean up Git repositories using BFG Repo-Cleaner, a powerful tool designed to remove unwanted data from Git history.
+
+What is BFG Repo-Cleaner?
+BFG Repo-Cleaner is an open-source tool developed by Roberto Tyley specifically for cleaning up Git repositories. It offers several features to help users remove large files, sensitive data, or unwanted commits from their Git history. Unlike traditional Git commands, BFG Repo-Cleaner operates on the repository's history directly, making it faster and more efficient for cleaning up large repositories.
+
+Getting Started with BFG Repo-Cleaner:
+Before using BFG Repo-Cleaner, you'll need to install Java on your system, as BFG Repo-Cleaner is a Java application. Once Java is installed, you can download the BFG JAR file from the official website or use a package manager to install it.
+
+Cleaning up a Git Repository:
+Let's walk through the process of cleaning up a Git repository using BFG Repo-Cleaner.
+
+1. Clone the Repository:
+   First, clone the repository you want to clean up using the `git clone --mirror` command. This command creates a full mirror of the repository, including all branches and tags.
+
+```
+git clone --mirror git://example.com/some-big-repo.git
+```
+
+2. Run BFG Repo-Cleaner:
+   Next, run BFG Repo-Cleaner on the cloned repository. In this example, we'll use the `--strip-blobs-bigger-than` option to remove blobs (files) larger than 100MB from the repository history.
+
+```
+java -jar bfg.jar --strip-blobs-bigger-than 100M some-big-repo.git
+```
+
+3. Cleanup and Push Changes:
+   After running BFG Repo-Cleaner, we need to expire the reflog and perform garbage collection to remove the unwanted data permanently.
+
+```
+git reflog expire --expire=now --all && git gc --prune=now --aggressive
+```
+
+Finally, push the cleaned-up repository to the remote server using `git push`.
+
+```
+git push
+```
+
+Conclusion:
+Cleaning up Git repositories is essential for maintaining a healthy and efficient development environment. With tools like BFG Repo-Cleaner, you can easily remove unwanted data from your Git history, reducing repository size and improving performance. By following the steps outlined in this blog post, you can effectively clean up your Git repositories and streamline your development workflow.

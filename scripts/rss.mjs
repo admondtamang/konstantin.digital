@@ -40,7 +40,6 @@ allPosts
       description: post.summary,
       date: parseISO(post.publishedAt),
       category: post.category,
-      image: `${baseUrl}${post.cover.src}`,
       author: [author],
       contributor: [author],
     });
