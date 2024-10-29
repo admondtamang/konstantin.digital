@@ -13,7 +13,7 @@ export const Avatar: FC<AvatarProps> = ({ size = 32, className }) => {
   return (
     <Image
       src={AvatarImg}
-      alt="Konstantin Münster"
+      alt="Admond Tamang"
       width={size}
       height={size}
       className={clsx(

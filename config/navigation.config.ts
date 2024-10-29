@@ -1,22 +1,21 @@
 export const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Case Studies', href: '/projects' },
-  { name: 'Content', href: '/blog' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'Curriculum vitae', href: '/admond-cv.pdf' },
   // { name: 'About', href: '/about' },
 ];
 
-export const legals = [
-  { name: 'Transparency', href: '/transparency' },
-  { name: 'Imprint', href: '/imprint' },
-];
+export const legals = [{ name: 'Transparency', href: '/transparency' }];
 
 export const socials = [
-  { name: 'Drop me an email', href: 'mailto:hey@konstantin.digital' },
-  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/konstantinmuenster/' },
-  { name: 'Twitter', href: 'https://www.twitter.com/@kmuenster' },
-  { name: 'GitHub', href: 'https://github.com/konstantinmuenster' },
-  { name: 'Medium', href: 'https://medium.com/@konstantinmuenster' },
+  { name: 'Drop me an email', href: 'mailto:admondtamang@gmail.com' },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/admondtamang/' },
+  { name: 'Twitter', href: 'https://www.twitter.com/@admondtamang' },
+  { name: 'GitHub', href: 'https://github.com/admondtamang' },
+  { name: 'Medium', href: 'https://medium.com/@admondtamang' },
+  { name: 'DevTo', href: 'https://dev.to/admondtamang' },
+  { name: 'Instagram', href: 'https://www.instagram.com/admondtamang/' },
 ];
 
 export const FreshEyesAuditSchedulingLink =
-  'https://cal.com/konstantinmuenster/fresh-eyes-audit';
+  'https://cal.com/admond-tamang-zjsq58/15min';

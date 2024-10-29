@@ -24,6 +24,7 @@ export const Header = () => {
         <NavigationItems className="flex items-center gap-8 lg:gap-12" />
       </div>
       <FixedCallToActionButton className="hidden md:block" />
+
       {/* MOBILE */}
       <div className="block md:hidden">
         <SlideOver Icon={Menu}>
@@ -73,8 +74,8 @@ const FixedCallToActionButton: FC<{ className?: string }> = props => {
 
 const CallToActionButton: FC<ComponentProps<'a'>> = props => {
   return (
-    <Button as="a" href="mailto:hey@konstantin.digital" size="sm" {...props}>
-      hey@konstantin.digital
+    <Button as="a" href="mailto:admondtamang@gmail.com" size="sm" {...props}>
+      hey@admondtamang
     </Button>
   );
 };

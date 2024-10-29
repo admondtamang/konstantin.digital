@@ -30,7 +30,7 @@ export const AvatarBubble: FC<AvatarBubbleProps> = ({ className }) => {
           <div className="rounded-t-full rounded-bl-md rounded-br-full border-[8px] border-white bg-white shadow-[0_0px_50px_-10px_rgba(0,0,0,0.3)]">
             <Image
               src={Avatar}
-              alt="Konstantin Münster"
+              alt="Admond Tamang"
               className="h-32 w-32 rounded-full border-2 border-white"
               sizes="256px"
               priority

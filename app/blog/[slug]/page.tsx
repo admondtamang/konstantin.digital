@@ -58,7 +58,7 @@ const Post = ({ params }: { params: { slug: string } }) => {
             <div className="flex items-center gap-2">
               <Avatar size={28} />
               <span className="text-sm font-medium opacity-75">
-                Konstantin Münster
+                Admond Tamang
               </span>
             </div>
             <time dateTime={post.publishedAt} className="text-sm opacity-75">
@@ -137,7 +137,7 @@ export const generateMetadata = (props: GenerateMetadataParams): Metadata => {
       url: `https://konstantin.digital/blog/${post.slug}`,
       tags: post.tags,
       publishedTime: post.publishedAt,
-      authors: 'Konstantin Münster',
+      authors: 'Admond Tamang',
     },
   };
 };

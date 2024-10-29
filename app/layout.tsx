@@ -20,15 +20,15 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       suppressHydrationWarning
     >
       <head>
-        <PlausibleAnalytics domain="konstantin.digital" />
+        <PlausibleAnalytics domain="admondtamang.com.np" />
         {/* <meta name="og:image" /> is generated. */}
-        <meta property="og:image:alt" content="Konstantin Münster" />
+        <meta property="og:image:alt" content="Admond Tamang" />
         {/* <meta name="twitter:image" /> is generated. */}
-        <meta property="og:image:alt" content="Konstantin Münster" />
+        <meta property="og:image:alt" content="Admond Tamang" />
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="konstantin.digital – Blog"
+          title="admondtamang – Blog"
           href="/rss.xml"
         />
       </head>
@@ -50,13 +50,13 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
  */
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://konstantin.digital'),
-  authors: { name: 'Konstantin Münster' },
-  creator: 'Konstantin Münster',
-  publisher: 'Konstantin Münster',
+  metadataBase: new URL('https://admondtamang.com.np'),
+  authors: { name: 'Admond Tamang' },
+  creator: 'Admond Tamang',
+  publisher: 'Admond Tamang',
   title: {
-    template: '%s | Konstantin Münster',
-    default: 'Konstantin Münster – Product Engineer',
+    template: '%s | Admond Tamang',
+    default: 'Admond Tamang – Product Engineer',
   },
   description:
     'Turn your product’s pain into production-ready features that unlock opportunities. For startups and scale-ups.',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   ],
   viewport: { width: 'device-width', initialScale: 1 },
   alternates: {
-    canonical: 'https://konstantin.digital',
+    canonical: 'https://admondtamang.com.np',
     types: {
       'application/rss+xml': '/rss.xml',
     },
@@ -79,31 +79,31 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
   twitter: {
     card: 'summary_large_image',
-    site: '@kmuenster',
-    creator: '@kmuenster',
-    title: 'Konstantin Münster – Product Engineer',
+    site: '@admondtamang',
+    creator: '@admondtamang',
+    title: 'Admond Tamang – Product Engineer',
     description:
       'Turn your product’s pain into production-ready features that unlock opportunities. For startups and scale-ups.',
   },
   openGraph: {
     type: 'profile',
-    firstName: 'Konstantin',
-    lastName: 'Münster',
-    username: 'kmuenster',
+    firstName: 'Admond',
+    lastName: 'Tamang',
+    username: 'admondtamang',
     gender: 'he/him',
-    emails: ['hey@konstantin.digital'],
-    url: 'https://konstantin.digital',
-    siteName: 'Konstantin Münster',
-    title: 'Konstantin Münster – Product Engineer',
+    emails: ['admondtamang@gmail.com'],
+    url: 'https://admondtamang.com.np',
+    siteName: 'Admond Tamang',
+    title: 'Admond Tamang – Product Engineer',
     description:
       'Turn your product’s pain into production-ready features that unlock opportunities. For startups and scale-ups.',
-    countryName: 'Germany',
+    countryName: 'Nepal',
     locale: 'en_US',
   },
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: 'Konstantin Münster',
+    title: 'Admond Tamang',
   },
   formatDetection: {
     email: false,

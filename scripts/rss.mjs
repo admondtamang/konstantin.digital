@@ -4,17 +4,17 @@ import { Feed } from 'feed';
 
 import allPosts from '../.contentlayer/generated/Post/_index.json' assert { type: 'json' };
 
-const baseUrl = 'https://konstantin.digital';
+const baseUrl = 'https://admondtamang.com.np';
 const author = {
-  name: 'Konstantin Münster',
-  email: 'hey@konstantin.digital',
+  name: 'Admond Tamang',
+  email: 'admondtamang@gmail.com',
   link: baseUrl,
 };
 
 const date = new Date();
 
 const feed = new Feed({
-  title: 'konstantin.digital',
+  title: 'admondtamang',
   description: 'All about product development and freelancing.',
   id: baseUrl,
   link: baseUrl,
@@ -22,7 +22,7 @@ const feed = new Feed({
   image: `${baseUrl}/favicon.ico`,
   favicon: `${baseUrl}/favicon.ico`,
   updated: date,
-  copyright: `All rights reserved ${date.getFullYear()}, Konstantin Münster`,
+  copyright: `All rights reserved ${date.getFullYear()}, Admond Tamang`,
   author,
   feedLinks: {
     rss2: `${baseUrl}/rss.xml`,
@@ -32,7 +32,7 @@ const feed = new Feed({
 allPosts
   .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
   .forEach(post => {
-    const url = `https://konstantin.digital/blog/${post.slug}`;
+    const url = `https://admondtamang/blog/${post.slug}`;
     feed.addItem({
       id: url,
       link: url,

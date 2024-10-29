@@ -12,7 +12,7 @@ export const Footer = () => {
         <div className="flex flex-col">
           <Logo iconColor="white" textHidden />
           <span className="mt-3 block text-sm text-white">
-            &copy; {year} Konstantin Münster.
+            &copy; {year} Admond Tamang.
           </span>
           <span className="block text-sm text-white">All rights reserved.</span>
           <span className="mt-5 block text-sm text-white">

@@ -4,7 +4,7 @@ import { ImageResponse } from 'next/server';
 
 export const runtime = 'edge';
 
-export const alt = 'Konstantin Münster';
+export const alt = 'Admond Tamang';
 export const size = {
   width: 1200,
   height: 630,

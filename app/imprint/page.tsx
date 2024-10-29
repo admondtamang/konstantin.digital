@@ -11,7 +11,7 @@ const Imprint = () => {
       <h1>Imprint</h1>
       <p>Information pursuant to § 5 TMG:</p>
       <p>
-        Konstantin Münster
+        Admond Tamang
         <br />
         Rissener Landstr. 225A
         <br />
