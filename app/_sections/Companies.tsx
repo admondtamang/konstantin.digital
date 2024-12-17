@@ -81,59 +81,10 @@ export const CompaniesSection = () => {
 
 const companies = [
   {
-    name: 'Regioful',
-    logo: '/images/companies/regioful-de.svg',
-    url: 'https://www.regioful.de/',
+    name: 'Webpoint',
+    logo: '/images/companies/webpoint.svg',
+    url: 'https://www.webpoint.io/',
     width: 140,
     height: 50,
-  },
-  {
-    name: 'Lazy',
-    logo: '/images/companies/lazy-so.png',
-    url: 'https://www.lazy.so/',
-    width: 100,
-    height: 40,
-  },
-  {
-    name: 'OTTO',
-    logo: '/images/companies/otto.svg',
-    url: 'https://www.otto.de/',
-    width: 90,
-    height: 40,
-  },
-  {
-    name: 'ABOUT YOU',
-    logo: '/images/companies/about-you.svg',
-    url: 'https://www.aboutyou.de/',
-    width: 150,
-    height: 40,
-  },
-  //   {
-  //     name: 'Leadquelle',
-  //     logo: '/images/companies/leadquelle.svg',
-  //     url: 'https://www.leadquelle.net/',
-  //     width: 150,
-  //     height: 40,
-  //   },
-  {
-    name: 'dskrpt',
-    logo: '/images/companies/dskrpt.svg',
-    url: 'https://www.dskrpt.de/',
-    width: 100,
-    height: 40,
-  },
-  {
-    name: 'Lost Nomad Brewing',
-    logo: '/images/companies/lostnomad.svg',
-    url: 'https://www.lostnomadbrewing.com/',
-    width: 150,
-    height: 40,
-  },
-  {
-    name: 'KABO KAFFEE',
-    logo: '/images/companies/kabo.png',
-    url: 'https://www.kabo-kaffee.de/',
-    width: 50,
-    height: 55,
   },
 ];

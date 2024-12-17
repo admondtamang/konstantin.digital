@@ -35,12 +35,12 @@ type CTAProps = CTAVariants & {
 };
 
 export const CTA: FC<CTAProps> = ({
-  title = "Let's challenge your product.",
-  description = 'Fresh eyes help generate new perspectives. Book a free call in which we identify opportunities and broken flows in your web app.',
+  title = 'Challenge your product.',
+  description = 'We help generate new perspectives. Book a free call in where we identify opportunities and broken flows in your web app.',
   buttonText = 'Schedule free call',
   buttonLink = FreshEyesAuditSchedulingLink,
   buttonAdornment = <DefaultButtonAdornment />,
-  benefits = ['20min call', 'Get product feedback'],
+  benefits = ['20min call'],
   secondaryButtonText,
   secondaryButtonLink,
   variant,

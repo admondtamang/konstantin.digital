@@ -13,9 +13,9 @@ export const AboutSection = () => {
             An engineer - or simply a developer - who loves to build web apps
           </p>
           <p className="my-5 opacity-90">
-            My passion has always been at the intersection of product and web
-            development. I love talking to users and developing ideas as much as
-            coding with a good lo-fi playlist running in the back 🎧
+            Driven by the intersection of product innovation and web
+            development. Enjoys engaging with users and developing ideas, all
+            while coding to a good lo-fi playlist.🎧
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Label color="gray">4+ years of building web apps</Label>

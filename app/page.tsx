@@ -13,7 +13,6 @@ const Home = () => {
     <main>
       <HeroSection />
       <CompaniesSection />
-      <ChallengesSection />
       <AboutSection />
 
       <CTASection id="cta-method" variant="sun" />
