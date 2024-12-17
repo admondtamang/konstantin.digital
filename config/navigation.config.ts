@@ -1,6 +1,7 @@
 export const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Blog', href: '/blog' },
+  { name: 'Blogs', href: '/blogs' },
+  { name: 'Projects', href: '/projects' },
   { name: 'Curriculum vitae', href: '/admond-cv.pdf' },
   // { name: 'About', href: '/about' },
 ];

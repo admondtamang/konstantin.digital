@@ -32,7 +32,7 @@ const Projects = () => {
       />
       <div className="mx-auto mb-24 mt-12 flex max-w-5xl flex-col gap-12">
         {projects.map(project => {
-          return project.items.length > 0 ? (
+          return project.items.length == 0 ? (
             <div key={project.name}>
               <h2
                 id={project.name.toLowerCase().replace(' ', '-')}
@@ -63,7 +63,7 @@ const Projects = () => {
 const HeroTitle = () => {
   return (
     <span className="relative">
-      <span>Case Studies</span>
+      <span>Hobby Projects</span>
       <Sparkles className="absolute -right-12 -top-10 hidden sm:block" />
     </span>
   );
@@ -92,10 +92,10 @@ const HeroActions = () => {
 /** EXPORTS */
 
 export const metadata: Metadata = {
-  title: 'Case Studies',
+  title: 'Hobby Projects',
   description: 'A collection of freelance and open-source projects.',
   alternates: {
-    canonical: `https://konstantin.digital/projects`,
+    canonical: `https://admondtamang.com.np/projects`,
   },
 };
 

@@ -80,7 +80,7 @@ export const Footer = () => {
 
 const carbonFootprint = 0.24;
 const carbonFootprintUrl =
-  'https://www.websitecarbon.com/website/konstantin-digital/';
+  'https://www.websitecarbon.com/website/admondtamang-com-np/';
 
 const CarbonFootprint = () => {
   return (

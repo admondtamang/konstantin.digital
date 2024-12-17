@@ -17,7 +17,7 @@ export const Logo: FC<LogoProps> = props => {
   const textSize = props.textSize ?? 24;
 
   return (
-    <div className="flex items-center justify-start gap-3">
+    <div className="flex items-center justify-start gap-3 font-medium">
       Home
       {!props.textHidden && (
         <span
